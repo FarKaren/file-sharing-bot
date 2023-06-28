@@ -1,0 +1,31 @@
+server:
+  port: 8084
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+bot:
+  name: advanced_file_sharing_bot
+  token: 6038072282:AAFNC4t1gdH0Jb18ExeEEluPFYSBudOYLcE
+logging:
+  level:
+    root: INFO # Уровень логгирования для всех логгеров
+    ru.karen: DEBUG
+  file:
+    name: dispatcher.log # Имя файла для записи логов
+    path: ./ # Путь к директории, где будет создан файл
+    max-file-size: 50MB
+    max-history: 10
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" # Шаблон для вывода логов в консоль
+    file: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" # Шаблон для записи логов в файл
+
+rabbitmq:
+  queues:
+    docMessageUpdate: doc_message_update
+    photoMessageUpdate: photo_message_update
+    textMessageUpdate: text_message_update
+    answerMessage: answer_message
