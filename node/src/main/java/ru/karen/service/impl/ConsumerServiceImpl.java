@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import org.telegram.telegrambots.meta.api.methods.send.SendMessage;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import ru.karen.service.ConsumerService;
+import ru.karen.service.MainService;
 import ru.karen.service.ProducerService;
 
 @Service
@@ -16,19 +17,13 @@ import ru.karen.service.ProducerService;
 @RequiredArgsConstructor
 @EnableRabbit
 public class ConsumerServiceImpl implements ConsumerService {
-    private final ProducerService producerService;
+    private final MainService mainService;
 
     @Override
     @RabbitListener(queues = "text_message_update", ackMode = "AUTO")
     public void consumeTextMessageUpdates(Update update) {
         log.debug("Node text message is received");
-
-        var message = update.getMessage();
-        var sendMessage = new SendMessage();
-        sendMessage.setChatId(message.getChatId().toString());
-        sendMessage.setText("Hello from node");
-        producerService.producerAnswer(sendMessage);
-
+        mainService.processTextMessage(update);
     }
 
     @Override
