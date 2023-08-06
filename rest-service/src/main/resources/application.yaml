@@ -1,11 +1,6 @@
 server:
-  port: 8080
+  port: 8081
 spring:
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
   datasource:
     url: jdbc:postgresql://localhost:5432/pogreb
     username: admin
@@ -26,17 +21,4 @@ logging:
     console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" # Шаблон для вывода логов в консоль
     file: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" # Шаблон для записи логов в файл
 
-rabbitmq:
-  queues:
-    docMessageUpdate: doc_message_update
-    photoMessageUpdate: photo_message_update
-    textMessageUpdate: text_message_update
-    answerMessage: answer_message
-
-token: 6038072282:AAFNC4t1gdH0Jb18ExeEEluPFYSBudOYLcE
-service:
-  file_info:
-    uri: https://api.telegram.org/bot{token}/getFile?file_id={fileId}
-  file_storage:
-    uri: https://api.telegram.org/file/bot{token}/{filePath}
 

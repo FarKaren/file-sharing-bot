@@ -1,1 +1,45 @@
-09:06:59.183 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h59m34s284ms928µs601ns).
+08:52:15.274 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h53m14s655ms990µs700ns).
+09:23:38.438 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+09:23:38.499 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+09:23:38.518 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Waiting for workers to finish.
+09:23:38.819 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-2] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+09:23:38.836 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-2] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+09:23:38.836 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Successfully waited for workers to finish.
+09:23:40.081 [SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+09:23:40.082 [SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+09:23:40.082 [SpringApplicationShutdownHook] INFO  o.s.a.r.l.SimpleMessageListenerContainer - Shutdown ignored - container is already stopped
+09:23:40.271 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+09:23:40.458 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+09:23:40.546 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+09:24:03.843 [main] INFO  ru.karen.NodeApplication - Starting NodeApplication using Java 11.0.12 on KAREN with PID 55840 (C:\Users\User\Desktop\Java\file-sharing-bot\node\target\classes started by User in C:\Users\User\Desktop\Java\file-sharing-bot)
+09:24:03.849 [main] DEBUG ru.karen.NodeApplication - Running with Spring Boot v2.7.13, Spring v5.3.28
+09:24:03.850 [main] INFO  ru.karen.NodeApplication - No active profile set, falling back to 1 default profile: "default"
+09:24:05.885 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+09:24:06.052 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 141 ms. Found 2 JPA repository interfaces.
+09:24:08.180 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+09:24:08.204 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:24:08.204 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.76]
+09:24:09.022 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:24:09.023 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4992 ms
+09:24:09.465 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:24:09.967 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:24:10.117 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+09:24:10.386 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 5.6.15.Final
+09:24:10.796 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+09:24:11.178 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+09:24:12.806 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+09:24:12.822 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+09:24:14.244 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+09:24:15.031 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+09:24:15.035 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Attempting to connect to: [localhost:5672]
+09:24:15.570 [main] INFO  o.s.a.r.c.CachingConnectionFactory - Created new connection: rabbitConnectionFactory#4a1934e2:0/SimpleConnection@47c422d3 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54243]
+09:24:15.809 [main] INFO  ru.karen.NodeApplication - Started NodeApplication in 13.26 seconds (JVM running for 14.857)
+09:28:56.199 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] DEBUG r.k.service.impl.ConsumerServiceImpl - Node text message is received
+09:35:53.572 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] DEBUG r.k.service.impl.ConsumerServiceImpl - Node text message is received
+09:36:17.506 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] DEBUG r.k.service.impl.ConsumerServiceImpl - Node text message is received
+09:36:24.763 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] DEBUG r.k.service.impl.ConsumerServiceImpl - Node text message is received
+09:59:15.935 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] DEBUG r.k.service.impl.ConsumerServiceImpl - Node photo message is received
+14:37:07.629 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h9m17s469ms876µs700ns).
+15:33:18.127 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m5s756ms472µs300ns).
+18:07:09.400 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m10s391ms185µs300ns).
+18:52:14.510 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m1s675ms798µs200ns).
